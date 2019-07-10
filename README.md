@@ -1,2 +1,8 @@
-# ch_autodelete_badsongs
-Removes all the folders listed in badsongs.txt
+# Autodelete bad songs from Clone Hero folder
+Removes all the folders listed in badsongs.txt.
+
+Usage:
+```
+$ npm install
+$ npm start /full/path/to/badsongs.txt
+```
