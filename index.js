@@ -12,7 +12,11 @@ if (isValid(arg)) {
 
     for (let i = 0; i < paths.length; i++) {
       if (paths[i] !== '\r' && !paths[i].includes('These folders')) {
-        rimraf(paths[i], () => {
+        rimraf(paths[i], (err) => {
+          if (err) {
+            console.log(err)
+          }
+
           console.log('Removed folder: ' + paths[i])
         })
       }
